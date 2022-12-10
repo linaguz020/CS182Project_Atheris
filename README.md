@@ -10,5 +10,7 @@
 2. Install Beautiful Soup
 ```pip install beautifulsoup4```
 
-3. Run the following command to simulate our program.
+3. Clone our repository into your environment.
+
+4. Run the following command to simulate our program.
 ```python3 fuzzer.py```
