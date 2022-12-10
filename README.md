@@ -10,7 +10,13 @@
 2. Install Beautiful Soup
 ```pip install beautifulsoup4```
 
-3. Clone our repository into your environment.
+3. Install requests
+```pip install requests```
 
-4. Run the following command to simulate our program.
+4. Clone our repository into your environment.
+
+5. Run the following command to simulate our program.
 ```python3 fuzzer.py```
+
+If you want to use the corpus, run the code at least once to allow requests to pull the html into the corpus.txt file. From there, run with seeded corpus with
+```python3 fuzzer.py -seed_inputs=corpus.txt
