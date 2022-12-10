@@ -1,8 +1,8 @@
 import atheris
 import sys
+import requests
 
 with atheris.instrument_imports():
-    import requests
     from bs4 import BeautifulSoup as bs
 
 with open("corpus.txt", 'w') as f:
@@ -11,7 +11,7 @@ with open("corpus.txt", 'w') as f:
 
 def CustomMutator(data, max_size, seed):
     try:
-        bs(data, features="html.parser")
+        res = bs(data, features="html.parser")
     # except UnicodeEncodeError:
     #     with open("corpus.txt", 'rb') as f:
     #         data = f.read()
