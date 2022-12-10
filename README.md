@@ -20,3 +20,6 @@
 
 If you want to use the corpus, run the code at least once to allow requests to pull the html into the corpus.txt file. From there, run with seeded corpus with
 ```python3 fuzzer.py -seed_inputs=corpus.txt```
+
+To recreate the crashes, run the program with
+```python3 fuzzer.py -seed_inputs=crash-[errortype].txt```
